@@ -9,7 +9,6 @@ router.route('/')
 })
 .post(async(req,res)=>{
     const { nombre , email , telefono , consulta } = req.body
-    console.log(req.body)
     const newFormulario = new dbDatos({
         nombre,
         email,

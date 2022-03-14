@@ -1,6 +1,6 @@
 require('dotenv').config()
 const app = require('./app')
-require('./db')
+/*require('./db')*/
 
 async function Main (){
     await app.listen(app.get('puerto'))

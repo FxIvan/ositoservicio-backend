@@ -1,3 +1,5 @@
+/*
+
 const { Router } = require('express')
 const router = Router()
 const dbDatos = require('../models/schema')
@@ -7,7 +9,7 @@ router.route('/')
     const datosFormulario = await dbDatos.find()
     res.json(datosFormulario)
 })
-/*
+
 .post(async(req,res)=>{
     const { nombre , email , telefono , consulta } = req.body
     console.log(req.body)

@@ -1,5 +1,3 @@
-/*
-
 const { Router } = require('express')
 const router = Router()
 const dbDatos = require('../models/schema')
@@ -21,6 +19,6 @@ router.route('/')
     })
     await newFormulario.save()
 })
-*/
+
     
 module.exports = router

@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
     res.send('Conexion correctamente')
 })
 
-/*
+
 app.use('/formulario', require('./rutas/routeForm'))
-*/
+
 module.exports = app

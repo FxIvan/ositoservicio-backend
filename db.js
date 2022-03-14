@@ -1,4 +1,3 @@
-/*
 require('dotenv').config()
 const mongoose = require('mongoose')
 
@@ -11,4 +10,3 @@ mongoose.connect(MONGO_URL,{useNewUrlParser:true , useUnifiedTopology:true})
 .catch(err=>{
     console.log('Error: ', err)
 })
-*/

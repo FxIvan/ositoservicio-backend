@@ -1,4 +1,3 @@
-/*
 const { Schema , model} = require('mongoose')
 
 const formulario = new Schema({
@@ -14,4 +13,3 @@ const formulario = new Schema({
 const dbDatos = model('formularios', formulario)
 
 module.exports = dbDatos
-*/

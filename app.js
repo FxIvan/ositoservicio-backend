@@ -5,7 +5,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.set('puerto', process.env.NODE_PUERTO || 3001)
+app.set('puerto', process.env.NODE_PUERTO || 27017)
 
 app.get('/',(req,res)=>{
     res.send('Conexion correctamente')

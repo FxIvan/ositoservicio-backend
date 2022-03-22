@@ -19,9 +19,10 @@ router.route('/')
     })
     await newFormulario.save()
 })
-router.route('/:id')
+router.route('/:_id')
 .get(async(req,res)=>{
-    const datosId = await dbDatos.findById(req.params.id)
+    const datosId = await dbDatos.findById(req.params._id)
+    console.log(req.params._id)
     res.json(datosId)
 })
 

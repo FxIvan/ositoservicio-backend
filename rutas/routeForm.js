@@ -19,6 +19,11 @@ router.route('/')
     })
     await newFormulario.save()
 })
+router.route('/:id')
+.get(async(req,res)=>{
+    const datosId = await dbDatos.findById(req.params.id)
+    res.json(datosId)
+})
 
     
 module.exports = router

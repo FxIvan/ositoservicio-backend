@@ -27,6 +27,7 @@ router.route('/:_id')
 })
 .delete(async(req,res)=>{
     await dbDatos.findByIdAndDelete(req.params.id)
+    res.json({message:'Elemento eliminado'})
 })
 
     

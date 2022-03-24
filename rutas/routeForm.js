@@ -25,6 +25,9 @@ router.route('/:_id')
     console.log(req.params._id)
     res.json(datosId)
 })
+.delete(async(req,res)=>{
+    await dbDatos.findByIdAndDelete(req.params.id)
+})
 
     
 module.exports = router

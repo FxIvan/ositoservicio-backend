@@ -28,7 +28,6 @@ router.route('/:_id')
 .delete(async(req,res)=>{
     await dbDatos.findByIdAndDelete(req.params._id)
     res.json({message:'Elemento eliminado'})
-    res.render('/panelcontrol/formpanel')
 })
 
     
